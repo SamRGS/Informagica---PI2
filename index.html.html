@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informágica</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes sparkles {
+      0% { text-shadow: 0 0 5px #facc15, 0 0 10px #facc15, 0 0 20px #facc15; }
+      50% { text-shadow: 0 0 10px #f97316, 0 0 20px #f97316, 0 0 30px #f97316; }
+      100% { text-shadow: 0 0 5px #facc15, 0 0 10px #facc15, 0 0 20px #facc15; }
+    }
+    .magica {
+      animation: sparkles 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50 text-gray-800">
+   <!-- Cabeçalho -->
+  <header class="bg-black shadow p-7">
+    <div class="flex items-center justify-between h-24 px-4">
+      <nav class="flex-shrink-0">
+        <ul class="flex space-x-6 text-white font-medium">
+          <li><a href="#home" class="hover:text-orange-500">Home</a></li>
+          <li><a href="#login" class="hover:text-orange-500">Login</a></li>
+          <li><a href="#sobre" class="hover:text-orange-500">Sobre</a></li>
+          <li><a href="#contato" class="hover:text-orange-500">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="flex-1 flex justify-center">
+        <img src="logo2.png" class="h-full w-15 object-contain">
+      </div>
+    </div>
+  </header>
+  <!-- Conteúdo principal -->
+  <main class="flex-1 p-6" id="home">
+    <section class="max-w-5xl mx-auto">
+      <div class="mb-6">
+        <h1 class="text-4xl font-bold mb-4 magica">Bem-vindo à Informágica</h1>
+        <p class="text-lg text-gray-700 mb-6">
+          Aqui é onde a mágica da informática acontece! 🎩✨ Nada de papo enrolado — a gente explica tudo na moral, do básico ao avançado, com leveza, bom humor e sem complicação. Dá o play no vídeo aí embaixo e vem descobrir como vamos turbinar sua jornada no mundo digital! 🚀💻
+        </p>
+        <div class="aspect-w-16 aspect-h-9">
+          <iframe class="w-full h-96 rounded-lg shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Vídeo de apresentação" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="max-w-5xl mx-auto mt-12">
+      <h2 class="text-2xl font-semibold mb-4">Sobre Nós</h2>
+      <p class="text-gray-700">
+          A Informágica surgiu depois de ver que até a galera mais conectada às vezes trava na hora de fazer coisas básicas no computador — tipo formatar um texto no Word, mandar um PDF certo ou até organizar pastas. 😅 Por isso, estamos aqui pra descomplicar tudo! Seja você um total iniciante ou alguém que já manja um pouco, o site oferece conteúdos educativos, dicas práticas, tutoriais passo a passo e muito mais pra te deixar afiado no mundo digital. 💻✨
+      </p>
+    </section>
+    <section id="cursos" class="max-w-5xl mx-auto mt-12">
+      <h2 class="text-2xl font-semibold mb-6">Cursos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="cruso-basico-bem-feito.png" alt="Curso 1" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">O Básico Bem Feito</h3>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="curso-excel-patrono.png" alt="Curso 2" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">Excel Patrono</h3>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="curso-cmd-magico.png" alt="Curso 3" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">CMD Magico</h3>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="curso-OSAE.png" alt="" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold">O Suficiente para Arrumar um Emprego</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato" class="max-w-5xl mx-auto mt-12">
+      <h2 class="text-2xl font-semibold mb-4">Contato</h2>
+      <p class="text-gray-700 mb-2">Entre em contato pelo e-mail: <a href="mailto:contato@informagica.com" class="text-blue-600 hover:underline">contato@informagica.com</a></p>
+    </section>
+
+    <section id="sugestoes" class="max-w-5xl mx-auto mt-12"> 
+        <h2 class="text-2x1 font-semibold mb-4"> Qual a sua maior dificuldade relacionada a informática? </h2>
+        <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"> 
+            <div class="mb-4">
+                <label class="block text-gray-700 text-sm font-bold mb-2" for="nome"> 
+                    Nome
+                </label>
+                <input class="shadow appearance-none border border rounded w-full py-2 px-3 text-gray-700 leading-tight focus: outline-none" id="nome" type="text" placeholder="Seu nome">
+                </div>
+        <div class="mb-4">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+            E-mail
+          </label>
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Seu e-mail">
+        </div>
+        <div class="mb-6">
+          <label class="block text-gray-700 text-sm font-bold mb-2" for="sugestao">
+            Dificuldade
+          </label>
+          <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="sugestao" rows="4" placeholder="Escreva aqui sua sugestão de conteúdo..."></textarea>
+        </div>
+        <div class="flex items-center justify-between">
+          <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
+            Enviar
+          </button>
+            </div>
+        </form>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-100 text-center p-4 mt-8">
+    <p class="text-gray-600">&copy; 2025 Informágica. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Script opcional -->
+  <script>
+    // Exemplo de JS simples: scroll suave nos links da navbar
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
